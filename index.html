@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            max-width: 1200px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        main {
+            float: left;
+            width: 70%;
+            padding: 1rem;
+        }
+        aside{
+            float: right;
+            width: 25%;
+            padding: 1rem;
+            background: #f4f4f4;
+        }
+        article {
+            margin-bottom: 2rem;
+        }
+        article img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+        footer {
+            clear: both;
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+        }
+        footer form {
+            margin: 1rem 0;
+        }
+        footer input[type="email"] {
+            padding: 0.5rem;
+            width: 200px;
+        }
+        footer input[type="submit"] {
+            padding: 0.5rem;
+            background: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to An Awesome Blog</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#posts">Posts</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>First Blog Post</h2>
+            <img src="Discipline wallpaper.jpeg" alt="Discipline Wallpaper">
+            <p>This is the content of the blog post.</p>
+        </article>
+        <article>
+            <h2>Upcoming Events</h2>
+            <img src="Discipline wallpaper.jpeg" alt="Discipline Wallpaper">
+            <p>This is another blog post content.</p>
+            <table>
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>Tech Conference</td>
+                        <td>2023-10-01</td>
+                        <td>San Francisco</td>
+                    </tr>
+                    <tr>
+                        <td>Webinar on AI</td>
+                        <td>2023-10-15</td>
+                        <td>Online</td>
+                    </tr>
+                    <tr>
+                        <td>Workshop on Web Development</td>
+                        <td>2023-09-15</td>
+                        <td>New York</td>       
+                    </tr>
+            </table>
+        </article>
+    </main>
+    <aside>
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="#post1">First Blog Post</a></li>
+            <li><a href="#post2">Upcoming Events</a></li>
+            <li><a href="#post3">Latest Trends in Tech</a></li>
+            <li><a href="#post4">AI Innovations</a></li>
+        </ul>
+        <h3>Categories</h3>     
+        <ul>
+            <li><a href="#tech">Tech</a></li>
+            <li><a href="#lifestyle">Lifestyle</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#food">Food</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>Contact: <a href="mailto:info@myblog.com">info@myblog.com</a>&copy; 2023 My Blog</p>
+        <form action="/subscribe" method="post">
+            <label for="email">Subscribe to our newsletter:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </footer>
+</body>
+</html>
